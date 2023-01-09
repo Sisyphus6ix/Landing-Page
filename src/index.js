@@ -1,1 +1,3 @@
-alert('This is still working')
+import { pageHeader } from 'src/home.js'
+
+pageHeader()
