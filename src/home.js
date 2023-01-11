@@ -14,13 +14,16 @@ const pageHeader = () => {
     header.appendChild(navLinks)
     const link1 = document.createElement('a')
     link1.setAttribute('href', '#')
+    link1.setAttribute('class', 'button-nav')
     link1.innerText = 'Home'
     const link2 = document.createElement('a')
     link2.setAttribute('href', '#')
+    link2.setAttribute('class', 'button-nav')
     link2.innerText = 'Menu'
     const link3 = document.createElement('a')
     link3.setAttribute('href', '#')
-    link3.innerText = 'About'
+    link3.setAttribute('class', 'button-nav')
+    link3.innerText = 'Contact'
     
     navLinks.appendChild(link1)
     navLinks.appendChild(link2)
@@ -55,7 +58,12 @@ const pageFooter = () => {
     footer.appendChild(footerInfo)
 }
 
+const clearPage = () => {
+    let emptyPage = document.getElementById('content')
+    emptyPage.innerHTML = '' 
+}
 
 export { pageHeader }
 export { homePageContent }
 export { pageFooter }
+export { clearPage }
