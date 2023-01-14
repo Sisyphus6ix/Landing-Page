@@ -12,16 +12,13 @@ const pageHeader = () => {
     const navLinks = document.createElement('div')
     navLinks.setAttribute('class', 'links')
     header.appendChild(navLinks)
-    const link1 = document.createElement('a')
-    link1.setAttribute('href', '#')
+    const link1 = document.createElement('button')
     link1.setAttribute('class', 'button-nav')
     link1.innerText = 'Home'
-    const link2 = document.createElement('a')
-    link2.setAttribute('href', '#')
+    const link2 = document.createElement('button')
     link2.setAttribute('class', 'button-nav')
     link2.innerText = 'Menu'
-    const link3 = document.createElement('a')
-    link3.setAttribute('href', '#')
+    const link3 = document.createElement('button')
     link3.setAttribute('class', 'button-nav')
     link3.innerText = 'Contact'
     
