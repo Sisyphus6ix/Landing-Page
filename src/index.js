@@ -4,6 +4,7 @@ import { pageFooter } from "/src/home.js";
 import { clearPage } from "/src/home.js";
 
 import { foodMenu } from "/src/menu.js";
+import { contactInfo } from "/src/contact.js";
 
 clearPage()
 pageHeader()
@@ -32,4 +33,8 @@ menuBtn.addEventListener('click', function (){
 
 contactBtn.addEventListener('click', function (){
     console.log('Contact button works')
+    clearPage()
+    pageHeader()
+    contactInfo()
+    pageFooter()
 })
