@@ -60,7 +60,14 @@ const clearPage = () => {
     emptyPage.innerHTML = '' 
 }
 
+const initializeWebsite = () => {
+    pageHeader()
+    homePageContent()
+    pageFooter()
+}
+
 export { pageHeader }
 export { homePageContent }
 export { pageFooter }
 export { clearPage }
+export { initializeWebsite }
