@@ -1,5 +1,5 @@
 const foodMenu = () => {
-    const content = document.getElementById('content')
+    const holder = document.getElementById('holder')
     const menu = document.createElement('div')
     menu.setAttribute('class', 'food-menu')
     const food = document.createElement('div')
@@ -32,7 +32,8 @@ const foodMenu = () => {
     foodThreeInfo.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet'
     foodThreePrice.innerText = '$33'
     
-    content.appendChild(menu)
+    // content.appendChild(holder)
+    holder.appendChild(menu)
     menu.appendChild(food)
     food.appendChild(foodOne)
     foodOne.appendChild(foodOneTitle)

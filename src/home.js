@@ -28,6 +28,8 @@ const pageHeader = () => {
 }
 
 const homePageContent = () => {
+    const holder = document.createElement('div')
+    holder.setAttribute('id', 'holder')
     const main = document.createElement('div')
     main.setAttribute('class', 'main')
     const message = document.createElement('p')
@@ -39,7 +41,9 @@ const homePageContent = () => {
     message2.setAttribute('class', 'message')
     message2.innerText = 'Serving you since 1890'
 
-    content.appendChild(main) 
+    // holder.innerHTML = ''
+    content.appendChild(holder)
+    holder.appendChild(main) 
     main.appendChild(message)
     main.appendChild(image)
     main.appendChild(message2)
@@ -55,10 +59,12 @@ const pageFooter = () => {
     footer.appendChild(footerInfo)
 }
 
-const clearPage = () => {
-    let emptyPage = document.getElementById('content')
-    emptyPage.innerHTML = '' 
+const clearDiv = () => {
+    let emptyDiv = document.getElementById('holder')
+    emptyDiv.innerHTML = '' 
 }
+
+
 
 const initializeWebsite = () => {
     pageHeader()
@@ -69,5 +75,5 @@ const initializeWebsite = () => {
 export { pageHeader }
 export { homePageContent }
 export { pageFooter }
-export { clearPage }
+export { clearDiv }
 export { initializeWebsite }

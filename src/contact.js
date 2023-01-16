@@ -1,5 +1,5 @@
 const contactInfo = () => {
-    const content = document.getElementById('content')
+    const holder = document.getElementById('holder')
     const infoDiv = document.createElement('div')
     infoDiv.setAttribute('class', 'contact-div')
 
@@ -23,7 +23,7 @@ const contactInfo = () => {
     const location = document.createElement('img')
     location.setAttribute('src', 'https://www.pointsandtravel.com/wp-content/uploads/2013/11/Snip20150905_266.png')
 
-    content.appendChild(infoDiv)
+    holder.appendChild(infoDiv)
     infoDiv.appendChild(info)
     infoDiv.appendChild(map)
     info.appendChild(phoneInfo)
