@@ -27,7 +27,7 @@ const pageHeader = () => {
     navLinks.appendChild(link3)
 }
 
-const homePageContent = () => {
+const mainPage = () => {
     const holder = document.createElement('div')
     holder.setAttribute('id', 'holder')
     const main = document.createElement('div')
@@ -41,7 +41,6 @@ const homePageContent = () => {
     message2.setAttribute('class', 'message')
     message2.innerText = 'Serving you since 1890'
 
-    // holder.innerHTML = ''
     content.appendChild(holder)
     holder.appendChild(main) 
     main.appendChild(message)
@@ -64,16 +63,35 @@ const clearDiv = () => {
     emptyDiv.innerHTML = '' 
 }
 
+const homePage = () => {
+    const holder = document.getElementById('holder')
+    holder.setAttribute('id', 'holder')
+    const main = document.createElement('div')
+    main.setAttribute('class', 'main')
+    const message = document.createElement('p')
+    message.setAttribute('class', 'message')
+    message.innerText = 'Your local fan favorite!'
+    const image = document.createElement('img')
+    image.src = 'https://www.idlememe.com/wp-content/uploads/2021/10/salt-bae-meme-idlememe.jpg'
+    const message2 = document.createElement('p')
+    message2.setAttribute('class', 'message')
+    message2.innerText = 'Serving you since 1890'
 
+    holder.appendChild(main) 
+    main.appendChild(message)
+    main.appendChild(image)
+    main.appendChild(message2)
+}
 
 const initializeWebsite = () => {
     pageHeader()
-    homePageContent()
+    mainPage()
     pageFooter()
 }
 
 export { pageHeader }
-export { homePageContent }
+export { mainPage }
 export { pageFooter }
 export { clearDiv }
+export { homePage }
 export { initializeWebsite }
