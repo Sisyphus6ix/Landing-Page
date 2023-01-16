@@ -1,5 +1,5 @@
-import { initializeWebsite } from "/src/home.js";
-import { clearDiv } from "/src/home.js";
+import { initializeWebsite } from "/src/default.js";
+import { clearDiv } from "/src/default.js";
 import { homePage } from "/src/home.js";
 import { foodMenu } from "/src/menu.js";
 import { contactInfo } from "/src/contact.js";

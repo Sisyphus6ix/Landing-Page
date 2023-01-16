@@ -3,6 +3,7 @@ This project is created for the sole purpose of learning and part of the "The Od
 
 **Live preview** [here](https://sisyphus6ix.github.io/Landing-Page/)
 
-### TO DO!
-- Bug fixes
-- Clean up code
+### What I Learned
+- Webpack
+- JavaScript DOM Manipulation
+- JavaScript Classes
